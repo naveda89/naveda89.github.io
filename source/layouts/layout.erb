@@ -15,22 +15,28 @@
 
     <%= stylesheet_link_tag :site %>
     <%= stylesheet_link_tag :animate %>
-    <%= javascript_include_tag :all %>
   </head>
 
-  <body class="<%= page_classes %> animated fadeInDown">
+  <body class="<%= page_classes %>">
     <%= partial "shared/analytics" %>
 
-    <header>
-      <div class="container text-center">
-        <div class="inner">
-          <h1>Alvaro Naveda <br/><small>Web Developer</small></h1>
-        </div>
+    <div class="wrapper">
+      <div class="wrapper-container">
+        <header class=" animated fadeInDown">
+          <div class="heading">
+            <div class="inner">
+              <h1>Álvaro Naveda <br/><small>Web Developer</small></h1>
+            </div>
+          </div>
+        </header>
+        <%= yield %>
       </div>
-    </header>
-    <%= yield %>
+    </div>
+    <div id="particles-js"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag "vendor/particles.min.js" %>
+    <%= javascript_include_tag :all %>
   </body>
 </html>

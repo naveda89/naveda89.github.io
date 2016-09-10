@@ -1,0 +1,11 @@
+header {
+  background-color: rgba(200,200,200,.2);
+  padding: 10px 0 25px;
+  overflow: hidden;
+  border-top: 1px solid rgba(51, 117, 173, 0.68);
+  border-bottom: 1px solid rgba(51, 117, 173, 0.68);
+  & + section {
+    margin: -25px 0;
+  }
+}
+

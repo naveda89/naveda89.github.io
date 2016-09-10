@@ -2,16 +2,21 @@
 title: Alvaro Naveda
 ---
 
-<section>
-  <div class="container text-center">
+<section class=" animated fadeInUp">
+  <div class="link-icons">
     <% link_to("https://github.com/naveda89/", target: "_blank", class: "btn btn-primary btn-lg") do %>
-      <span class="">Github</span>
+      <span class="hidden">Github</span>
       <i class="fa fa-github"></i>
     <% end %>
 
     <% link_to("https://twitter.com/naveda/", target: "_blank", class: "btn btn-primary btn-lg") do %>
-      <span class="">Twitter</span>
+      <span class="hidden">Twitter</span>
       <i class="fa fa-twitter"></i>
+    <% end %>
+
+    <% link_to("https://es.linkedin.com/in/alvaronaveda/", target: "_blank", class: "btn btn-primary btn-lg") do %>
+      <span class="hidden">LinkedIn</span>
+      <i class="fa fa-linkedin"></i>
     <% end %>
   </div>
 </section>
